@@ -81,7 +81,7 @@ export default function HomePageClient() {
       <HeroBannerCarousel banners={banners} />
 
       {categories.length > 0 && (
-        <section className="max-w-7xl mx-auto px-4 sm:px-6 py-16">
+        <section className="max-w-7xl mx-auto px-4 sm:px-6 py-16 dark:bg-slate-950">
           <div className="flex items-center justify-between mb-8">
             <h2 className="text-2xl font-extrabold text-gray-900 dark:text-white tracking-tight">Shop by category</h2>
           </div>
@@ -109,7 +109,7 @@ export default function HomePageClient() {
         </section>
       )}
 
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 py-16 border-t border-gray-50 dark:border-slate-900">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 py-16 border-t border-gray-100 dark:border-slate-900 dark:bg-slate-950">
         <div className="flex items-end justify-between gap-4 mb-10">
           <div>
             <h2 className="text-3xl font-extrabold text-gray-900 dark:text-white tracking-tight">Featured picks</h2>
@@ -172,7 +172,7 @@ export default function HomePageClient() {
         </section>
       )}
 
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 py-14">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 py-14 dark:bg-slate-950">
         <div className="grid md:grid-cols-3 gap-8 text-center">
           <div className="flex flex-col items-center">
             <div className="w-14 h-14 rounded-2xl bg-green-100 dark:bg-green-900/40 flex items-center justify-center mb-3">
