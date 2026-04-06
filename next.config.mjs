@@ -17,12 +17,8 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  /** Client-only: longer chunk load timeout in dev (does not touch server bundles). */
-  webpack: (config, { dev, isServer }) => {
-    if (dev && !isServer && config.output) {
-      config.output.chunkLoadTimeout = 300000;
-    }
-    return config;
+  experimental: {
+    turbopack: {},
   },
 };
 
